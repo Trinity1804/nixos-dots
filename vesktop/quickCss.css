@@ -1,0 +1,29 @@
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");
+@import url("https://raw.codeberg.page/AllPurposeMat/Disblock-Origin/DisblockOrigin.theme.css");
+.banner__68edb {
+  display: none !important;
+}
+.newMemberBadge_f80704 {
+  display: none !important;
+}
+:root {
+  --display-badges: none;                         /* Nitro and Booster badges on user profiles */
+  --display-gif-button: none;                     /* GIF button in chat bar */
+  --display-sticker-button: none;                 /* Sticker button in chat bar */
+  --display-hover-reaction-emoji: unset;          /* Emoji suggestions on message hover */
+  --display-app-launcher: none;                   /* App launcher right of chat bar */
+  --bool-super-reaction-hide-anim: true;          /* Replace Super Reactions with a blink animation */
+  --display-super-reactions: unset;               /* Hide super reactions entirely */
+  --display-profile-effects: none;                /* Avatar decorations & profile effects */
+  --display-nameplates: none;                     /* Hide nameplates in the members list */
+  --display-active-now: unset;                    /* Active Now column in friends list */
+  --display-clan-tags: unset;                     /* Clan tags next to the usernames */
+  --display-server-settings-boost-tab: none;      /* Server settings menu Boost tab */
+
+  --display-settings-billing-header: unset;       /* Settings menu Billing Settings header */
+  --display-settings-nitro-tab: none;             /* Settings menu Nitro tab */
+  --display-settings-server-boost-tab: none;      /* Settings menu Server Boost tab */
+  --display-settings-subscriptions-tab: none;     /* Settings menu Subscriptions tab */
+  --display-settings-gift-inventory-tab: unset;   /* Settings menu Gift Inventory tab */
+  --display-nitro-features: none;                 /* Settings menu Billing tab, Super React toggle, GIF Avatar */
+}
