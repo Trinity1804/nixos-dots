@@ -8,12 +8,9 @@
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
-      vpl-gpu-rt          # for newer GPUs on NixOS >24.05 or unstable
-      # onevpl-intel-gpu  # for newer GPUs on NixOS <= 24.05
-      # intel-media-sdk   # for older GPUs
+      vpl-gpu-rt
     ];
   };
-  hardware.opengl.enable = true;
   services.tlp.enable = true;
   programs.command-not-found.enable = true;
   catppuccin.flavor = "macchiato";
@@ -49,7 +46,7 @@ fi
   xdg.portal.config = {
   common = {
     default = [
-      "gtk"
+      "hyprland"
     ];
   };
   };
@@ -170,6 +167,35 @@ fi
   # $ nix search wget
    environment.systemPackages =  [
      pkgs.lm_sensors
+     pkgs.adoptopenjdk-icedtea-web
+     pkgs.adw-gtk3
+     pkgs.blueman
+     pkgs.btop
+     pkgs.bun
+     pkgs.cmake
+     pkgs.eog
+     pkgs.gnumake
+     pkgs.gutenprint
+     pkgs.hunspell
+     pkgs.libnotify
+     pkgs.libreoffice-qt
+     pkgs.luarocks
+     pkgs.mediastreamer-openh264
+     pkgs.microfetch
+     pkgs.mpv
+     pkgs.gh
+     pkgs.nautilus
+     pkgs.nodejs_22
+     pkgs.pavucontrol
+     pkgs.pnpm
+     pkgs.rustc
+     pkgs.rustup
+     pkgs.traceroute
+     pkgs.vesktop
+     pkgs.walker
+     pkgs.wl-clipboard
+     pkgs.xwayland
+     pkgs.xdg-utils
      pkgs.vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      pkgs.wget
      pkgs.fastfetch
